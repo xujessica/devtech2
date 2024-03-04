@@ -11,8 +11,8 @@ class MysqlCon{
         int foreignKeyToWhat = rsWho.getInt(4);
         System.out.println(rsWho.getInt(1)
           + " " + rsWho.getString(2)
-          + " " + rsWho.getInt(3)
-          + " " + rsWho.getDate(4));
+          + " " + rsWho.getString(3)
+          + " " + rsWho.getInt(4));
         String whatQuery = 
         "select * from What where What_pk = '" + foreignKeyToWhat + "'";
         System.out.println(whatQuery);
